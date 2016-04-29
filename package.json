@@ -1,0 +1,14 @@
+{
+  "name": "mucks-register",
+  "version": "0.0.1",
+  "description": "registration api wrapper for mucks",
+  "author": "Eugene Dobry <eugene@dobry.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edobrt/mucks-register"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
