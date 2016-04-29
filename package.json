@@ -5,7 +5,7 @@
   "author": "Eugene Dobry <eugene@dobry.me>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edobrt/mucks-register"
+    "url": "https://github.com/edobry/mucks-register"
   },
   "main": "index.js",
   "dependencies": {
