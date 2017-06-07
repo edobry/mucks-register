@@ -1,16 +1,15 @@
-var request = require("request");
+const
+    request = require("request-promise"),
+    Promise = require("bluebird");
 
 var LOG = message => console.log(message);
 
-module.exports = (path, app, cb) => {
-    LOG("registering...");
-    request.post({
-        url: `http://localhost:1999/${path}`,
-        body: app
-    }, (err, res, body) => {
-        if(err)
-            throw new Error(err);
+module.exports = (route, appName, port) => {
+    LOG(`registering route ${route} to ${appName}...`);
 
-        cb(body);
-    });
+    return request.post({
+        url: `http://localhost:1999/${route}`,
+        body: { id: appName, port }
+    }).tap(port =>
+        LOG(`registered ${appName} to localhost:${port}/${route}`));
 };
