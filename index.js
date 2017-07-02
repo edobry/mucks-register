@@ -10,6 +10,8 @@ module.exports = (route, appName, port) => {
     return request.post({
         url: `http://localhost:1999/${route}`,
         body: { id: appName, port }
-    }).tap(port =>
+    }).catch(err =>
+        console.log(`${err}: mucks not found?`))
+    .tap(port =>
         LOG(`registered ${appName} to localhost:${port}/${route}`));
 };
