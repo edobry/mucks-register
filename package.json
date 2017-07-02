@@ -1,6 +1,6 @@
 {
   "name": "mucks-register",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "registration api wrapper for mucks",
   "author": "Eugene Dobry <eugene@dobry.me>",
   "repository": {
