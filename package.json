@@ -1,6 +1,6 @@
 {
   "name": "mucks-register",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "registration api wrapper for mucks",
   "author": "Eugene Dobry <eugene@dobry.me>",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/edobry/mucks-register"
   },
   "bin": {
-      "mucks-register": "cli.js"
+    "mucks-register": "cli.js"
   },
   "main": "index.js",
   "dependencies": {
